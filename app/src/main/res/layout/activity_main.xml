@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/myimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ross"
+        android:layout_weight="4"
+        />
+
+
+  <GridLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:rowCount="1"
+         android:columnCount="2"
+         >
+
+         <Button
+             android:id="@+id/startbutton"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Play"
+             android:layout_margin="5sp"
+             android:onClick="startPlay"/>
+
+         <Button
+             android:id="@+id/stopbutton"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Stop"
+             android:layout_margin="5sp"
+             android:onClick="stopPlay"/>
+
+
+     </GridLayout>
+
+
+</LinearLayout>
